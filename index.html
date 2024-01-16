@@ -1,5 +1,36 @@
 <html><head><title>
 test</title>
+<style>  .login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        padding: 10px;
+    }
+}</style>
 </head>
 
 
@@ -7,5 +38,20 @@ test</title>
 
 
 <h1>  First Upload webpage on github</h1>
+
+
+<div class="login-container">
+  <form action="#">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+
 </body>
 </html>
